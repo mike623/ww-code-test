@@ -10,7 +10,7 @@ you should wish to continue beyond that we welcome you to do so.
 
 Click the **Use this template** button above to create a private repository in your own github account and invite github users [@mrwithersea](https://github.com/mrwithersea) and [@rob1256](https://github.com/rob1256) as collaborators on your repo.
  
-Please commit your work on a new branch and raise a pull request against the master branch of your repo and add us as reviewers. Please add a simple description to your PR outlining which parts of the test have been completed and any comments you feel necessary.
+**IMPORTANT: Please commit your work on a new branch and raise a pull request against the master branch of your repo and add us as reviewers. Please add a simple description to your PR outlining which parts of the test have been completed and any comments you feel necessary.**
 
 Start the app by running the following commands:
  
