@@ -24,8 +24,16 @@ const bandsOnDate = (date) => {
   )(allBands);
 };
 
-// TODO this should do more than return the number it's given
-const slice = R.curry((floor, ceiling, num) => num);
+// TODO: is it expected typof floor, ceiling, num are 'object'?
+// TODO: provide JSDoc to declared why type return expected
+const slice = R.curry((floor, ceiling, num) => {
+    floor = parseInt(floor);
+    ceiling = parseInt(ceiling);
+    num = parseInt(num);
+    if(num < floor) return RD.decimal(0);
+    if(num > ceiling) return RD.decimal(ceiling - floor);
+    return RD.decimal(num - floor);
+});
 
 const calcForBand = R.curry(
   (income, { floor, ceiling, rate }) => RD.multiply(
